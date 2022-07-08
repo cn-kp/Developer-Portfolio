@@ -1,0 +1,103 @@
+@import "../../variables.scss";
+
+.profile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(139, 247, 236, 0.771),rgb(239, 239, 99));
+  .profile-main {
+    display: flex;
+    align-items: center;
+    color: $darkgrey;
+    .social-media-icons a {
+      padding: 10px;
+      padding-bottom: 0px;
+      width: 20px;
+      &:hover {
+        color: white;
+      }
+    }
+    .profile-name {
+      font-size: 25px;
+      font-family: $font;
+    }
+    .profile-roles {
+      display: flex;
+      flex-direction: column;
+      margin: 15px 0 25px 0;
+      h1 {
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        font-family: $Cfont;
+      }
+      .profile-summary {
+        font-size: 20px;
+        font-family: "Times New Roman", Times, serif;
+        margin: 5px 0 0 0;
+      }
+    }
+    .primary-text {
+      color: rgb(53, 50, 50);
+    }
+    .resume-download {
+      margin: 0 0 0 60px;
+      background-color: yellow;
+      padding: 1rem;
+      border-radius: 4px solid;
+      &:hover {
+        color: rgb(75, 206, 206);
+        background: azure;
+      }
+    }
+  }
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 0 0 #81d2c7;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  margin: 0 0 0 100px;
+  .profile-background {
+    background-image: url("../../../public/assets/images/profile-pic.jpg");
+    height: 80%;
+    width: 80%;
+    background-size: cover;
+    border-radius: 50%;
+    &:hover {
+      transition: 1s;
+      transform: scale(1.1);
+    }
+  }
+}
+
+// smaller size devices
+@media screen and (max-width: 658px) {
+  .profile-picture {
+    margin: 0 !important;
+  }
+  .profile-main {
+    flex-direction: column-reverse;
+    margin: 40px 0 0 0;
+  }
+  .profile-resume {
+    display: flex;
+    justify-content: space-between;
+  }
+  .profile-name {
+    font-size: 15px;
+  }
+  .profile-details {
+    margin: 20px 0 0 0;
+  }
+  .resume-download {
+    width: 100px;
+    padding: 8px 0 0 0;
+    z-index: 1;
+    font-size: 12px;
+  }
+}

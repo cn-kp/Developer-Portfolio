@@ -1,5 +1,57 @@
 @import "../../variables.scss";
 
-.navbar{
-    background-color:$dark;
+.navbar {
+  height: 75px;
+  width: 100%;
+  background-color: $grey;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  .navbar-container {
+    padding: 20px 30px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .quick-links {
+      padding: 10px;
+
+      li {
+        float: left;
+        a {
+          display: block;
+          text-align: center;
+          padding-right: 1rem;
+          color: black;
+        }
+      }
+    }
+  }
+  .navbar-mobile{
+      .hamburger-icon{
+          width:2em;
+          height:1.5em;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          cursor: pointer;
+          
+
+          span{
+            width:100%;
+            height: 0.2em;
+            background-color: $darkgrey;
+          }
+      }
+  }
+  &.active{
+      background-color: $light;
+
+      a{
+          color: black;
+      }
+  }
 }

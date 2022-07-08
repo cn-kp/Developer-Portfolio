@@ -12,3 +12,9 @@ $teal:#81D2C7;
 
 $light: whitesmoke;
 $dark: #333;
+
+@mixin mobile {
+    @media (max-width: 768px){
+        @content
+    }
+}
