@@ -3,7 +3,7 @@
 ## Deployment
 
 - [GitHub Repository](https://github.com/cn-kp/Developer-Portfolio)
-- [GitHub Deployed Link](https://cn-kp.github.io/Developer-Portfolio/)
+- [Heroku Deployed Link](https://kevindevportfolio.herokuapp.com/)
 
 ## Description
 
