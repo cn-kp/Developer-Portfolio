@@ -1,10 +1,7 @@
 import React, {useState} from "react";
 import "./Navbar.scss";
 
-import { GiHamburgerMenu } from "react-icons/gi";
-
 export default function Navbar({hamburgerState,setHamburgerState}) {
-  // console.log(hamburgerState)
   return (
     <div className="navbar">
       <div className="navbar-container">
@@ -27,7 +24,6 @@ export default function Navbar({hamburgerState,setHamburgerState}) {
         </ul>
         <div className="navbar-mobile">
           <div className="hamburger-icon" onClick={() => setHamburgerState(!hamburgerState) }>
-          {/* <GiHamburgerMenu/> */}
             <span></span>
             <span></span>
             <span></span>
